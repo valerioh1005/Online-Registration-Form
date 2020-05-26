@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*==========Base Styles===========*/
+
+body {
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2c3e50, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Merriweather', serif;
+    color: #fff;
+}
+
+p {
+    font-family: 'Noto Serif JP', serif;
+    font-size: .9rem;
+    color: #fff;
+}
+
+fieldset {
+    border: 0;
+}
+
+legend {
+    font-size: 1.2rem;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #fff;
+}
+
+label {
+    color: #fff;
+}
+
+textarea {
+    text-align: left;
+}
+
+input,
+textarea,
+select:hover {
+    cursor: pointer;
+}
+
+input,
+textarea,
+select:focus {
+    outline: 0;
+}
+
+
+/*=============Utility Classes=============*/
+
+.container {
+    width: 90%;
+    padding-bottom: 20%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.divider {
+    height: 5px;
+    width: 95%;
+    background: #333;
+    display: block;
+    margin: auto;
+    margin-top: 1.5rem
+}
+
+.divider-2 {
+    height: 2px;
+    width: 95%;
+    background: #333;
+    display: block;
+    margin: auto;
+    margin-top: 4px;
+
+}
+
+.divider-3 {
+    height: 2px;
+    width: 97%;
+    background: #333;
+    display: block;
+    margin: auto;
+    margin-top: 7px;
+
+}
+
+.btn {
+    background: #373B44;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4286f4, #373B44);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4286f4, #373B44);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 1.7rem;
+    font-style: italic;
+    font: medium;
+}
+
+
+/*============Main-Header & News Section=================*/
+
+#main-header {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 30px;
+}
+
+#news-section {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#news-section h2,
+#news-section p {
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+/*===================Form Styles==========================*/
+
+.form-group {
+    display: block;
+
+}
+
+.form-group label {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.1rem;
+}
+
+
+input[placeholder="required"] {
+    text-align: left;
+    font-style: italic;
+}
+
+
+.form-group input {
+    width: 100%;
+    padding: 18px 10px;
+    font-size: large;
+    margin: 12px 0;
+    background-color: #e8eeef;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-group select {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    background-color: #e8eeef;
+}
+
+
+
+.form-group-2 {
+    display: block;
+
+}
+
+.form-group-2 input {
+    margin: 1rem 0.7rem 0 0;
+}
+
+.form-group-2 label {
+    font-family: 'Noto Serif JP', serif;
+}
+
+input[name="zip"] {
+    display: block;
+    width: 50%;
+}
+
+.form-group-3 {
+    display: block;
+    margin-top: 1.1rem
+}
+
+.form-group-3 label {
+    font-size: 1.5rem;
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+.form-group-3 textarea {
+    width: 100%;
+    padding: 60px;
+    margin-top: 1rem;
+    border: none;
+    background-color: #e8eeef;
+    border-radius: 5px;
+}
+
+/*========Larger Devices========*/
+
+@media (min-width: 768px) {
+    .container {
+        width: 50%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .divider,
+    .divider-2 {
+        width: 53%;
+    }
+
+    .form-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .form-group input,
+    .form-group select {
+        width: 65%;
+    }
+
+    .form-group label {
+        display: inline-block;
+    }
+
+    input[name="zip"] {
+        width: 20%;
+        position: relative;
+        right: 45%;
+    }
+
+
+}
